@@ -18,10 +18,17 @@ public class RestaurantApp {
         Dish breakFast1 = new Dish(DishType.BREAKFAST, "huevos fritos", "huevos, sal, pimienta", 2400, 20);
         Dish breakFast2 = new Dish(DishType.BREAKFAST, "caldo de pollo", "papa, pollo, agua, ajo", 2400, 20);
         Dish lunch1 = new Dish(DishType.LUNCH, "pastas", "pastas frescas, salsas", 2400, 20);
+        Dish dinner1= new Dish(DishType.LUNCH, "Arepa con queso", "harina y queso", 2400, 20); 
         
         menu.addDish(breakFast1);
         menu.addDish( breakFast2);
         menu.addDish(lunch1);
+        menu.addDish(dinner1);
+        
+        
+        System.out.println(menu.getDishesPerType(DishType.BREAKFAST));
+        System.out.println(menu.getDishesPerType(DishType.LUNCH));
+        System.out.println(menu.getDishesPerType(DishType.DINNER));
     }
     
 }

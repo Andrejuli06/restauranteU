@@ -17,4 +17,22 @@ public class Dish {
         this.price = price;
         this.qty = qty;
     }
+
+    public DishType getType() {
+        return type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getIngredents() {
+        return ingredents;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+    
+    
 }
